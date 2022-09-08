@@ -1,0 +1,53 @@
+//path module
+
+var path = require('path');
+var filename = path.basename('/home/porkalanchiyam/WorkSpace/Demo/input.txt');
+console.log(filename);
+
+// const chalk = require ("chalk")
+// const moment = require("moment");
+
+// // 24 Hour format
+// console.log(moment().format("MM/DD/YYYY HH:mm:ss"));
+// // 12 Hour format
+// console.log(moment().format("MM/DD/YYYY hh:mm:ss"));
+
+// var datetime = new Date();
+//     console.log(datetime);
+
+const date = Date()
+
+// const new_date = new Date(date)
+// Then you can get all the details
+
+// const hours = new_date.getHours()
+// const minutes = new_date.getMinutes()
+
+console.log(date);
+
+
+// function sayHi() {
+// 	console.log('Hello');
+//   }
+  
+//   setTimeout(sayHi, 2000);
+
+
+// function say() {
+// 	console.log('Hello');
+//   }
+  
+//   setInterval(say, 1000);
+
+
+  const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/', (req, res) => {
+  res.send('Hello World bro!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
